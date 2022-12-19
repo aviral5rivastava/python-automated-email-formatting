@@ -8,3 +8,5 @@ for name in name_list:
     with open(f"./Output/ReadyToSend/{name}.text", mode="w") as new_file:
         new_letter_format = letter_format.replace("[name]", name.strip())
         new_file.write(new_letter_format)
+start_letter_file.close()
+name_file.close()
